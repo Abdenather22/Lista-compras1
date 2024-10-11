@@ -53,10 +53,21 @@ document.getElementById("finalizeListButton").onclick = function() {
     }
 };
 
-// Nova lista
+// Mostrar modal de confirmação
 document.getElementById("newListButton").onclick = function() {
+    document.getElementById("confirmationModal").style.display = "block";
+};
+
+// Confirmar a nova lista
+document.getElementById("confirmYes").onclick = function() {
     itemList = []; // Limpa a lista atual
     renderItems(); // Atualiza a visualização da lista
+    document.getElementById("confirmationModal").style.display = "none"; // Fecha o modal
+};
+
+// Cancelar nova lista
+document.getElementById("confirmNo").onclick = function() {
+    document.getElementById("confirmationModal").style.display = "none"; // Fecha o modal sem fazer alterações
 };
 
 // Ao carregar a página, verifica se há lista salva
