@@ -64,20 +64,42 @@ button:hover {
     background-color: #c82333;
 }
 
-.supplier-container {
+/* Modal de Confirmação */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: auto;
+    z-index: 1;
+    text-align: center;
+    padding-top: 100px;
 }
 
-.supplier-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
     border-radius: 5px;
+    max-width: 300px;
+    color: black;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal-buttons button:hover {
+    background-color: #218838;
 }
